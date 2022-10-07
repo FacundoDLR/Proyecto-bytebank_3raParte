@@ -21,7 +21,7 @@ public abstract class Cuenta {
 	private static int total;
 	
 	/**
-	 * Instancia una cuenta usando los parametros agencia y numero
+	 * Constructor para inicializar el objeto Cuenta a partir da agencia y numero
 	 * @param agencia
 	 * @param numero
 	 */
