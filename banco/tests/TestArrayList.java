@@ -1,15 +1,20 @@
 package banco.tests;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Vector;
 
 import banco.modelo.Cuenta;
 import banco.modelo.CuentaCorriente;
 
-public class TestUtil {
+public class TestArrayList {
 
 	public static void main(String[] args) {
 		
-		 ArrayList<Cuenta> lista = new ArrayList<Cuenta>();
+		//List<Cuenta> lista = new ArrayList<Cuenta>(); //usa array por debajo
+	    //List<Cuenta> lista = new LinkedList<Cuenta>(); //lista linkada
+	    List<Cuenta> lista = new Vector<Cuenta>(); //usa array por debajo, pero también es threadsafe
 
 	        Cuenta cc = new CuentaCorriente(22, 11);
 	        lista.add(cc);

@@ -109,4 +109,25 @@ public abstract class Cuenta {
 		this.retirar(valor);
 		cuenta.depositar(valor);
 	}
+	
+	/**
+	 * Este metodo verificará si una cuenta es igual a otra.
+	 * @param otra
+	 * @return
+	 */
+	@Override
+	public boolean equals(Object ref){
+
+		Cuenta otra = (Cuenta) ref;
+		
+	    if(this.agencia != otra.agencia){
+	        return false;
+	    }
+
+	    if(this.numero != otra.numero){
+	        return false;
+	    }
+
+	    return true;
+	}
 }
